@@ -45,11 +45,11 @@ fn main() {
                 
                 let ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                 
-                println!("\n{:#?}", ips);
-    
+                println!("\n{}", ips.iter().fold(String::new(), |acc, &num| acc + &num.to_string() + "\n"));
+                
                 thread::sleep(time::Duration::from_millis(500));
 
-                println!("\n\nPress (Ctrl + C) to exit . . .");
+                println!("\nPress (Ctrl + C) to exit . . .");
 
 
               } else {
