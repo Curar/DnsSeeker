@@ -45,7 +45,7 @@ fn main() {
                 
                 let ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                 
-                println!("\n{:?}", ips);
+                println!("\n{:#?}", ips);
     
                 thread::sleep(time::Duration::from_millis(500));
 
