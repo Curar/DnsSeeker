@@ -1,4 +1,4 @@
-//  DNS lookups
+//  DnsSeeker 
 //  writing for fun ✈
 //  by Curar 2021 ☠
 //  Writing on Linux in the Vim editor
