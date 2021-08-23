@@ -11,7 +11,7 @@ use std::time;
 
 fn main() {
    
-    println!("DNS lookups\n\n\n");
+    println!("DnsSeeker\n\n\n");
 
     loop {
     
