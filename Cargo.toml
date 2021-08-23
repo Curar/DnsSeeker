@@ -1,0 +1,10 @@
+[package]
+name = "dnsseeker"
+version = "0.1.0"
+edition = "2018"
+authors = ["Curar 2021r."]
+license = "GPL-v3"
+repository = "https://github.com/curar"
+
+[dependencies]
+dns-lookup = "*"
