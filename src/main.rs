@@ -1,4 +1,4 @@
-//  DnsSeeker 
+//  DNS lookups
 //  writing for fun ✈
 //  by Curar 2021 ☠
 //  Writing on Linux in the Vim editor
@@ -29,27 +29,27 @@ fn main() {
             adres = adres.trim().to_string();
                 if adres.len() != 0 {
 
-                        if let Some('\n')=adres.chars().next_back() {
+                    if let Some('\n')=adres.chars().next_back() {
     
-                           adres.pop();
+                        adres.pop();
     
-                        }
-                        if let Some('\r')=adres.chars().next_back() {
+                    }
+                    if let Some('\r')=adres.chars().next_back() {
 
-                           adres.pop();
+                        adres.pop();
     
-                        }
+                    }
     
-                        println!("You typed domain : {}", adres);
+                 println!("You typed domain : {}", adres);
     
                 
-                        let ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
+                let ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                 
-                        println!("\n{}", ips.iter().fold(String::new(), |acc, &num| acc + &num.to_string() + "\n"));
+                println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &num| acc + &num.to_string() + "\n"));
                 
-                        thread::sleep(time::Duration::from_millis(500));
+                thread::sleep(time::Duration::from_millis(500));
 
-                        println!("\nPress (Ctrl + C) to exit . . .");
+                println!("\nPress (Ctrl + C) to exit . . .");
 
 
               } else {
