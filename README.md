@@ -15,4 +15,6 @@ cargo build --target --release x86_64-pc-windows-gnu
 ```
 ## To reduce the size of an executable use UPX :
 https://github.com/upx/upx/releases
-I optimized the DnsSeeker code to opt-level = 3
+<br/>
+I optimized the DnsSeeker code to :
+`opt-level = 3`
