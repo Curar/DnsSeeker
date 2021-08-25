@@ -43,8 +43,10 @@ fn main() {
                  println!("You typed domain : {}", adres);
     
                 
-                let ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
-                
+                let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
+               
+                ips.sort();
+
                 println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
                 
                 thread::sleep(time::Duration::from_millis(500));
