@@ -17,4 +17,8 @@ cargo build --target --release x86_64-pc-windows-gnu
 https://github.com/upx/upx/releases
 <br/>
 I optimized the DnsSeeker code to :
-`opt-level = 3`
+<br/>
+```
+opt-level = 3
+lto = true
+```
