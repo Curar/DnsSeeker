@@ -25,8 +25,7 @@ lto = true
 ## DNS Root Servers :
 ```
 a.root-servers.net 	198.41.0.4, 2001:503:ba3e::2:30 	Verisign, Inc.
-b.root-servers.net 	199.9.14.201, 2001:500:200::b 	University of Southern California,
-Information Sciences Institute
+b.root-servers.net 	199.9.14.201, 2001:500:200::b 	University of Southern California, Information Sciences Institute
 c.root-servers.net 	192.33.4.12, 2001:500:2::c 	Cogent Communications
 d.root-servers.net 	199.7.91.13, 2001:500:2d::d 	University of Maryland
 e.root-servers.net 	192.203.230.10, 2001:500:a8::e 	NASA (Ames Research Center)
