@@ -13,7 +13,7 @@ rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
 cargo b --release --target x86_64-pc-windows-gnu
 ```
-## To reduce the size of an executable use UPX :
+## To reduce the size of an executable use UPX ::arrow_double_down:
 https://github.com/upx/upx/releases
 <br/>
 I optimized the DnsSeeker code to :
