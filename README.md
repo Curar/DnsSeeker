@@ -3,6 +3,10 @@ DNS lookups in Rust
 ## Testing on : :test_tube:
 `Linux, Windows 10 , Windows Serwer 2022, It probably works on macOS`
 :stethoscope:
+## In Linux :
+```
+cargo b --release
+```
 ## Create software on Linux and Windows 10 and Windows Server 2022 to make the program compatible with the Windows family:
 ```
 rustup target add x86_64-pc-windows-gnu
