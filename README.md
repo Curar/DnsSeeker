@@ -22,3 +22,5 @@ I optimized the DnsSeeker code to :
 opt-level = 3
 lto = true
 ```
+## DNS Root Servers :
+https://securitytrails.com/blog/dns-root-servers
