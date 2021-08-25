@@ -45,7 +45,7 @@ fn main() {
                 
                 let ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                 
-                println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &num| acc + &num.to_string() + "\n"));
+                println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
                 
                 thread::sleep(time::Duration::from_millis(500));
 
