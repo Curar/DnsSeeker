@@ -23,12 +23,6 @@ To reduce the size of an executable use UPX ::arrow_double_down:
 <br/>
 https://github.com/upx/upx/releases
 <br/>
-I optimized the DnsSeeker code to :
-<br/>
-`opt-level = 3`
-<br/>
-`lto = true`
-<br/>
 Read more about optimization in Rust :
 <br/>
 https://doc.rust-lang.org/book/ch14-01-release-profiles.html
