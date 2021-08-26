@@ -25,10 +25,9 @@ https://github.com/upx/upx/releases
 <br/>
 I optimized the DnsSeeker code to :
 <br/>
-```
-opt-level = 3
-lto = true
-```
+`opt-level = 3`
+<br/>
+`lto = true`
 <br/>
 Read more about optimization in Rust :
 <br/>
