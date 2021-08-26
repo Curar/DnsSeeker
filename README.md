@@ -26,6 +26,4 @@ lto = true
 <br/>
 Read more about optimization in Rust :
 <br/>
-```
 https://doc.rust-lang.org/book/ch14-01-release-profiles.html
-```
