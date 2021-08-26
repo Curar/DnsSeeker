@@ -1,5 +1,6 @@
 # DnsSeeker
-DNS lookups in Rust
+A simple program called "DnsSeeker" which uses the dns-lookup library
+https://github.com/keeperofdakeys/dns-lookup/
 ## Testing on : :test_tube:
 `Linux, Windows 10 , Windows Serwer 2022, It probably works on macOS`
 :stethoscope:
