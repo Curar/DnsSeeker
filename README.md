@@ -14,6 +14,10 @@ rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
 cargo b --release --target x86_64-pc-windows-gnu
 ```
+<br/>
+If you want to be SmartScreen compatible use SignTool.exe (Signature Tool) :
+<br/>
+https://docs.microsoft.com/pl-pl/dotnet/framework/tools/signtool-exe
 ## To reduce the size of an executable use UPX ::arrow_double_down:
 https://github.com/upx/upx/releases
 <br/>
