@@ -61,11 +61,17 @@ fn main() {
     
                     }
                     if adres == "q" {
+                      
                         println!("Goodbey!");
+                      
                         break;
+                      
                     } else if adres == "r" {
+                      
                         println!("{}\n", rootdns);
+                    
                     } else {
+                    
                         println!("You typed domain : {}", adres);
     
                         let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
@@ -79,8 +85,10 @@ fn main() {
                     }
 
                 } else {
-                    println!("Attention! Please enter a valid domain");
-                  }
+                  
+                     println!("Attention! Please enter a valid domain");
+                  
+                }
         }
         Err(error) => println!("{}", error),
     }
