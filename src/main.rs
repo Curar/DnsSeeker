@@ -39,24 +39,26 @@ fn main() {
                         adres.pop();
     
                     }
+                    if adres == "q" {
+                        println!("Goodbey!");
+                        break;
+                    } else {
+                        println!("You typed domain : {}", adres);
     
-                 println!("You typed domain : {}", adres);
-    
-                
-                let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
+                        let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                
-                ips.sort();
+                        ips.sort();
 
-                println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
+                        println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
                 
-                thread::sleep(time::Duration::from_millis(500));
+                        thread::sleep(time::Duration::from_millis(500));
 
-                println!("\nPress (Ctrl + C) to exit . . .");
+                        println!("\nPress (q) to exit . . .");
+                    }
 
-
-              } else {
-                println!("Attention! Please enter a valid domain");
-               }
+                } else {
+                    println!("Attention! Please enter a valid domain");
+                  }
         }
         Err(error) => println!("{}", error),
     }
