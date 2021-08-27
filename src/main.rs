@@ -11,7 +11,9 @@ use std::time;
 
 fn main() {
    
-    println!("DnsSeeker\n\n\n");
+    println!("\nDnsSeeker\n");
+
+    println!("https://github.com/curar\n");
 
     loop {
     
