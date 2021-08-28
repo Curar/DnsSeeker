@@ -25,6 +25,14 @@ fn main() {
         k.root-servers.net 	193.0.14.129, 2001:7fd::1           RIPE NCC
         l.root-servers.net 	199.7.83.42, 2001:500:9f::42        ICANN
         m.root-servers.net 	202.12.27.33, 2001:dc3::35          WIDE Project";
+    
+    let info_art =r"
+        +++++++++++++++++++++++++++++++++++++++++++
+        +                                         +
+        +       Welcome to the Curar project      +
+        +                                         +
+        +++++++++++++++++++++++++++++++++++++++++++
+        ";
 
     println!("\nDnsSeeker\n");
 
@@ -36,6 +44,7 @@ fn main() {
     
     println!("
     (r) to display Root DNS
+    (i) to display info.
     (q) to exit\n");
 
     print!("Please enter a valid domain (google.com) : ");
@@ -61,17 +70,13 @@ fn main() {
     
                     }
                     if adres == "q" {
-                      
                         println!("Goodbey!");
-                      
                         break;
-                      
                     } else if adres == "r" {
-                      
                         println!("{}\n", rootdns);
-                    
+                    } else if adres == "i" {
+                        println!("{}\n", info_art);
                     } else {
-                    
                         println!("You typed domain : {}", adres);
     
                         let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
@@ -85,10 +90,8 @@ fn main() {
                     }
 
                 } else {
-                  
-                     println!("Attention! Please enter a valid domain");
-                  
-                }
+                    println!("Attention! Please enter a valid domain");
+                  }
         }
         Err(error) => println!("{}", error),
     }
