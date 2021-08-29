@@ -1,6 +1,9 @@
 # DnsSeeker
-A simple program called "DnsSeeker" which uses the dns-lookup library
+A simple program called "DnsSeeker" which uses the dns-lookup library.
 https://github.com/keeperofdakeys/dns-lookup/
+<br/>
+This simple program takes advantage of the possibilities offered by the Regex library.
+https://github.com/rust-lang/regex
 ## Testing on : :test_tube:
 `Linux, Windows 10 , Windows Serwer 2022, It probably works on macOS`
 :stethoscope:
