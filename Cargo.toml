@@ -8,6 +8,7 @@ repository = "https://github.com/curar"
 
 [dependencies]
 dns-lookup = "*"
+regex = "*"
 [profile.dev]
 opt-level = 3
 [profile.release]
