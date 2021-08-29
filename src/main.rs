@@ -1,3 +1,4 @@
+//  DnsSeeker
 //  DNS lookups
 //  writing for fun ✈
 //  by Curar 2021 ☠
@@ -36,40 +37,31 @@ fn main() {
         ";
 
     println!("\nDnsSeeker\n");
-
     println!("https://github.com/curar\n");
 
     loop {
-    
     let mut adres=String::new();
-    
     println!("
     (r) to display Root DNS
     (i) to display info.
     (q) to exit\n");
-
     print!("Please enter a valid domain (google.com) : ");
-
     match io::stdout().flush() {
         Ok(_) => print!("") ,
         Err(e) => println!("{}", e),
         }
-
     match io::stdin().read_line(&mut adres) {
         Ok(_) => {
             adres = adres.trim().to_string();
                 if adres.len() != 0 {
-
                     if let Some('\n')=adres.chars().next_back() {
                         adres.pop();
                     }
                     if let Some('\r')=adres.chars().next_back() {
                         adres.pop();
                     }
-
                     let warunek: bool = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
                         .unwrap().is_match(&adres);
-
                     if adres == "q" {
                         println!("Goodbey!");
                         break;
@@ -77,26 +69,19 @@ fn main() {
                         println!("{}\n", rootdns);
                     } else if adres == "i" {
                         println!("{}\n", info_art);
-                    } else {
-                        if warunek == true {
+                    } else if warunek == true {
                             println!("You typed domain : {}", adres);
-    
                             let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
-               
                             ips.sort();
-
                             println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
-                
                             thread::sleep(time::Duration::from_millis(500));
-                        } else {
-                            println!("Attention! Please enter a valid domain");
+                    } else {
+                        println!("Attention! Please enter a valid domain");
                         }
-
-                    }
-
-                } else {
-                    println!("Attention! Please enter a valid domain");
-                  }
+                    
+                    } else {
+                        println!("Attention! Please enter a valid domain");
+                        }
         }
         Err(error) => println!("{}", error),
     }
