@@ -29,11 +29,12 @@ fn main() {
         m.root-servers.net 	202.12.27.33, 2001:dc3::35          WIDE Project";
     
     let info_art =r"
-        +++++++++++++++++++++++++++++++++++++++++++
-        +                                         +
-        +       Welcome to the Curar project      +
-        +                                         +
-        +++++++++++++++++++++++++++++++++++++++++++
+        +-----------------------------------------+
+        |                                         |
+        |       Welcome to the Curar project      |
+        |         https://github.com/curar        |
+        |                                         |
+        +-----------------------------------------+
         ";
 
     println!("\nDnsSeeker\n");
@@ -62,7 +63,7 @@ fn main() {
                     }
 
 
-                    let warunek: bool = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
+                    let warunek = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
                         .unwrap().is_match(&adres);
                     if adres == "q" {
                         println!("Goodbey!");
