@@ -61,7 +61,7 @@ fn main() {
                         adres.pop();
                     }
 
-
+                    // You can use it without: bool
                     let warunek: bool = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
                         .unwrap().is_match(&adres);
                     if adres == "q" {
