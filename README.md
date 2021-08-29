@@ -11,6 +11,7 @@ https://github.com/rust-lang/regex
 ```
 cargo b --release
 ```
+![GitHub Logo](dnsseeker-linux.png)
 ## Create software on Linux and Windows 10 and Windows Server 2022 to make the program compatible with the Windows family:
 ```
 rustup target add x86_64-pc-windows-gnu
