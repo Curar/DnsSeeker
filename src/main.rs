@@ -60,6 +60,8 @@ fn main() {
                     if let Some('\r')=adres.chars().next_back() {
                         adres.pop();
                     }
+
+
                     let warunek: bool = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
                         .unwrap().is_match(&adres);
                     if adres == "q" {
@@ -70,11 +72,11 @@ fn main() {
                     } else if adres == "i" {
                         println!("{}\n", info_art);
                     } else if warunek == true {
-                            println!("You typed domain : {}", adres);
-                            let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
-                            ips.sort();
-                            println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
-                            thread::sleep(time::Duration::from_millis(500));
+                        println!("You typed domain : {}", adres);
+                        let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
+                        ips.sort();
+                        println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
+                        thread::sleep(time::Duration::from_millis(500));
                     } else {
                         println!("Attention! Please enter a valid domain");
                         }
