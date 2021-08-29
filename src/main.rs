@@ -1,5 +1,6 @@
 //  DnsSeeker
 //  DNS lookups
+//  This is a Rust language research project
 //  writing for fun ✈
 //  by Curar 2021 ☠
 //  Writing on Linux in the Vim editor
