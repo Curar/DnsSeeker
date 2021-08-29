@@ -81,9 +81,9 @@ fn main() {
                         println!("Attention! Please enter a valid domain");
                         }
                     
-                    } else {
-                        println!("Attention! Please enter a valid domain");
-                        }
+                 } else {
+                     println!("Attention! Please enter a valid domain");
+                     }
         }
         Err(error) => println!("{}", error),
     }
