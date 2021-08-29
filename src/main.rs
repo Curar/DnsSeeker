@@ -67,7 +67,8 @@ fn main() {
                         adres.pop();
                     }
 
-                    let warunek: bool = Regex::new(r"^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]{0,1}\.([a-zA-Z]{1,6}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,3})$").unwrap().is_match(&adres);
+                    let warunek: bool = Regex::new(r"^[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9]{0,1}\.([a-zA-Z]{1,6}|[a-zA-Z0-9-]{1,30}\.[a-zA-Z]{2,3})$")
+                        .unwrap().is_match(&adres);
 
                     if adres == "q" {
                         println!("Goodbey!");
