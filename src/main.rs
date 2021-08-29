@@ -1,9 +1,10 @@
-//  DNS lookups
+//  DnsSeeker v1.0
 //  writing for fun ✈
 //  by Curar 2021 ☠
 //  Writing on Linux in the Vim editor
 
 use dns_lookup::lookup_host;
+use regex::Regex;
 use std::io;
 use std::io::Write;
 use std::thread;
@@ -67,8 +68,12 @@ fn main() {
                     if let Some('\r')=adres.chars().next_back() {
 
                         adres.pop();
-    
+   
+
                     }
+
+                    let warunek: bool = (Regex::new(r"^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$").unwrap().is_match(&adres));
+
                     if adres == "q" {
                         println!("Goodbey!");
                         break;
@@ -77,15 +82,21 @@ fn main() {
                     } else if adres == "i" {
                         println!("{}\n", info_art);
                     } else {
-                        println!("You typed domain : {}", adres);
+                        if warunek == true {
+                            println!("You typed domain : {}", adres);
     
-                        let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
+                            let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                
-                        ips.sort();
+                            ips.sort();
 
-                        println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
+                            println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
                 
-                        thread::sleep(time::Duration::from_millis(500));
+                            thread::sleep(time::Duration::from_millis(500));
+                        } else {
+                        
+                            println!("Attention! Please enter a valid domain");
+
+                        }
 
                     }
 
