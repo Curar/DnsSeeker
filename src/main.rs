@@ -1,4 +1,4 @@
-//  DnsSeeker v1.0
+//  DNS lookups
 //  writing for fun ✈
 //  by Curar 2021 ☠
 //  Writing on Linux in the Vim editor
@@ -61,18 +61,13 @@ fn main() {
                 if adres.len() != 0 {
 
                     if let Some('\n')=adres.chars().next_back() {
-    
                         adres.pop();
-    
                     }
                     if let Some('\r')=adres.chars().next_back() {
-
                         adres.pop();
-   
-
                     }
 
-                    let warunek: bool = (Regex::new(r"^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$").unwrap().is_match(&adres));
+                    let warunek: bool = Regex::new(r"^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$").unwrap().is_match(&adres);
 
                     if adres == "q" {
                         println!("Goodbey!");
@@ -93,9 +88,7 @@ fn main() {
                 
                             thread::sleep(time::Duration::from_millis(500));
                         } else {
-                        
                             println!("Attention! Please enter a valid domain");
-
                         }
 
                     }
