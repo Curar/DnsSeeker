@@ -20,6 +20,7 @@ cargo b --release --target x86_64-pc-windows-gnu
 ```
 ![GitHub Logo](dnsseeker.png)
 <br/>
+I do not have a certificate, so my application is unsigned, therefore Windows SmartScreen detects it as dangerous.
 If you want to be SmartScreen compatible use SignTool.exe (Signature Tool) :
 <br/>
 https://docs.microsoft.com/pl-pl/dotnet/framework/tools/signtool-exe
