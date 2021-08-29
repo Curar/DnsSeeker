@@ -37,8 +37,7 @@ fn main() {
         +-----------------------------------------+
         ";
 
-    println!("\nDnsSeeker\n");
-    println!("https://github.com/curar\n");
+    println!("\nDnsSeeker");
 
     loop {
     let mut adres=String::new();
@@ -69,9 +68,9 @@ fn main() {
                         println!("Goodbey!");
                         break;
                     } else if adres == "r" {
-                        println!("{}\n", rootdns);
+                        println!("{}", rootdns);
                     } else if adres == "i" {
-                        println!("{}\n", info_art);
+                        println!("{}", info_art);
                     } else if warunek == true {
                         println!("You typed domain : {}", adres);
                         let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
