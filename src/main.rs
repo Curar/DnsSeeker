@@ -1,6 +1,5 @@
 //  DnsSeeker
 //  DNS lookups
-//  This is a Rust language research project
 //  writing for fun ✈
 //  by Curar 2021 ☠
 //  Writing on Linux in the Vim editor
@@ -62,11 +61,11 @@ fn main() {
                         adres.pop();
                     }
 
-                    // You can use it without: bool
+
                     let warunek: bool = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
                         .unwrap().is_match(&adres);
                     if adres == "q" {
-                        println!("Goodbey!");
+                        println!("Goodbye!");
                         break;
                     } else if adres == "r" {
                         println!("{}", rootdns);
