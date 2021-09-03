@@ -12,6 +12,9 @@ https://github.com/rust-lang/regex
 cargo b --release
 ```
 ![GitHub Logo](dnsseeker-linux.png)
+<br/>
+## I'm still working on error handling in v1.0:
+![GitHub Logo](error.png)
 ## Create software on Linux and Windows 10 and Windows Server 2022 to make the program compatible with the Windows family:
 ```
 rustup target add x86_64-pc-windows-gnu
@@ -19,8 +22,6 @@ rustup toolchain install stable-x86_64-pc-windows-gnu
 cargo b --release --target x86_64-pc-windows-gnu
 ```
 ![GitHub Logo](dnsseeker.png)
-<br/>
-![GitHub Logo](error.png)
 <br/>
 I do not have a certificate, so my application is unsigned, therefore Windows SmartScreen detects it as dangerous.
 If you want to be SmartScreen compatible use SignTool.exe (Signature Tool) :
