@@ -11,6 +11,7 @@ https://github.com/rust-lang/regex
 ```
 cargo b --release
 ```
+## This simple program will sort your addresses from the domain :
 ![GitHub Logo](dnsseeker-linux.png)
 <br/>
 ## I'm still working on error handling in v1.0:
