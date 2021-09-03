@@ -1,4 +1,4 @@
-# DnsSeeker
+# DnsSeeker is compatible with the IPv4 and IPv6 protocol
 A simple program called "DnsSeeker" which uses the dns-lookup library.
 https://github.com/keeperofdakeys/dns-lookup/
 <br/>
