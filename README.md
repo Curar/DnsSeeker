@@ -12,7 +12,7 @@ https://github.com/rust-lang/regex
 cargo b --release
 ```
 ## This simple program will sort the addresses that match the domain :
-![GitHub Logo](dnsseeker-linux.png)
+![GitHub Logo](dnsseeker_inf.png)
 <br/>
 ## I'm still working on error handling in v1.0:
 ![GitHub Logo](error.png)
