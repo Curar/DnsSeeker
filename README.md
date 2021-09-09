@@ -22,7 +22,6 @@ rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
 cargo b --release --target x86_64-pc-windows-gnu
 ```
-![GitHub Logo](dnsseeker.png)
 <br/>
 I do not have a certificate, so my application is unsigned, therefore Windows SmartScreen detects it as dangerous.
 If you want to be SmartScreen compatible use SignTool.exe (Signature Tool) :
