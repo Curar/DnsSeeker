@@ -14,8 +14,6 @@ cargo b --release
 ## This simple program will sort the addresses that match the domain :
 ![GitHub Logo](dnsseeker_inf.png)
 <br/>
-## I'm still working on error handling in v1.0:
-![GitHub Logo](error.png)
 ## Create software on Linux and Windows 10 and Windows Server 2022 to make the program compatible with the Windows family:
 ```
 rustup target add x86_64-pc-windows-gnu
