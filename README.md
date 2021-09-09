@@ -36,4 +36,4 @@ Read more about optimization in Rust :
 <br/>
 https://doc.rust-lang.org/book/ch14-01-release-profiles.html
 <br/>
-## Similar programs in Windows are: nslookup.exe but cannot sort ip addresses
+Similar programs in Windows are: nslookup.exe but cannot sort ip addresses
