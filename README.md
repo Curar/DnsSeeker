@@ -15,6 +15,7 @@ cargo b --release
 ![GitHub Logo](dnsseeker_inf.png)
 <br/>
 ## Create software on Linux and Windows 10 and Windows Server 2022 to make the program compatible with the Windows family:
+<br/>
 ```
 rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
