@@ -48,7 +48,7 @@ fn main() {
     print!("Please enter a valid domain (google.com) : ");
     match io::stdout().flush() {
         Ok(_) => print!("") ,
-        Err(blad1) => println!("{}; skipped.", blad1),
+        Err(blad1) => println!("{}", blad1),
         }
     match io::stdin().read_line(&mut adres) {
         Ok(_) => {
@@ -85,7 +85,7 @@ fn main() {
                     println!("Attention! Please enter a valid domain");
                     }
         }
-        Err(blad2) => println!("{}; skipped.", blad2),
+        Err(blad2) => println!("{}", blad2),
     }
   }
 }
