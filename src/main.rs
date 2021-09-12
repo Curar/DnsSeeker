@@ -8,8 +8,6 @@ use dns_lookup::lookup_host;
 use regex::Regex;
 use std::io;
 use std::io::Write;
-use std::thread;
-use std::time;
 
 fn main() {
   
@@ -76,7 +74,6 @@ fn main() {
                         let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                         ips.sort();
                         println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
-                        thread::sleep(time::Duration::from_millis(500));
                     } else {
                         println!("Attention! Please enter a valid domain");
                         }
