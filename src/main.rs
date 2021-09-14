@@ -35,18 +35,14 @@ fn main() {
         +-----------------------------------------+
         ";
 
-    println!("\nDnsSeeker");
+    println!("\nDnsSeeker\n");
 
     loop {
     let mut adres=String::new();
-    println!("
-    (r) to display Root DNS
-    (i) to display info.
-    (q) to exit\n");
     print!("Please enter a valid domain (google.com) : ");
     match io::stdout().flush() {
-        Ok(_) => print!("") ,
-        Err(blad1) => println!("{}", blad1),
+        Ok(_) => print!(""),
+        Err(_) => continue,
         }
     match io::stdin().read_line(&mut adres) {
         Ok(_) => {
@@ -58,8 +54,6 @@ fn main() {
                     if let Some('\r')=adres.chars().next_back() {
                         adres.pop();
                     }
-
-
                     let warunek: bool = Regex::new(r"([a-z0-9A-Z]\.)*[a-z0-9-]+\.([a-z0-9]{2,24})+(\.co\.([a-z0-9]{2,24})|\.([a-z0-9]{2,24}))*")
                         .unwrap().is_match(&adres);
                     if adres == "q" {
@@ -74,6 +68,10 @@ fn main() {
                         let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                         ips.sort();
                         println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
+                        println!("
+                        (r) to display Root DNS
+                        (i) to display info.
+                        (q) to exit\n");
                     } else {
                         println!("Attention! Please enter a valid domain");
                         }
@@ -82,7 +80,7 @@ fn main() {
                     println!("Attention! Please enter a valid domain");
                     }
         }
-        Err(blad2) => println!("{}", blad2),
+        Err(_) => continue,
     }
   }
 }
