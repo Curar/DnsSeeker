@@ -35,6 +35,13 @@ fn main() {
         +-----------------------------------------+
         ";
 
+
+    let disp_info = r"
+        (r) to display Root DNS
+        (i) to display info.
+        (q) to exit\n
+        ";
+
     println!("\nDnsSeeker\n");
 
     loop {
@@ -68,10 +75,7 @@ fn main() {
                         let mut ips: Vec<std::net::IpAddr> = lookup_host(&adres).unwrap();
                         ips.sort();
                         println!("\nResult :\n\n{}", ips.iter().fold(String::new(), |acc, &nawiasy| acc + &nawiasy.to_string() + "\n"));
-                        println!("
-                        (r) to display Root DNS
-                        (i) to display info.
-                        (q) to exit\n");
+                        println!("{}", disp_info);
                     } else {
                         println!("Attention! Please enter a valid domain");
                         }
