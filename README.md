@@ -37,4 +37,5 @@ Read more about optimization in Rust :
 https://doc.rust-lang.org/book/ch14-01-release-profiles.html
 <br/>
 Similar programs in Windows are: nslookup.exe but cannot sort ip addresses
-## DnsSeeker is 100% compatible with Rust version: 1.55.0
+<br/>
+DnsSeeker is 100% compatible with Rust version: 1.55.0
