@@ -24,7 +24,8 @@ fn main() {
         j.root-servers.net 192.58.128.30, 2001:503:c27::2:30 Verisign, Inc.
         k.root-servers.net 193.0.14.129, 2001:7fd::1         RIPE NCC
         l.root-servers.net 199.7.83.42, 2001:500:9f::42      ICANN
-        m.root-servers.net 202.12.27.33, 2001:dc3::35        WIDE Project";
+        m.root-servers.net 202.12.27.33, 2001:dc3::35        WIDE Project
+        ";
     
     let info_art =r"
         +-----------------------------------------+
@@ -34,6 +35,7 @@ fn main() {
         |                                         |
         +-----------------------------------------+
         ";
+
 
     let disp_info = r"
         (r) to display Root DNS
