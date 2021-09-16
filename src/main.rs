@@ -35,7 +35,6 @@ fn main() {
         +-----------------------------------------+
         ";
 
-
     let disp_info = r"
         (r) to display Root DNS
         (i) to display info.
