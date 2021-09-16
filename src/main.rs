@@ -39,7 +39,7 @@ fn main() {
     let disp_info = r"
         (r) to display Root DNS
         (i) to display info.
-        (q) to exit\n
+        (q) to exit
         ";
 
     println!("\nDnsSeeker\n");
