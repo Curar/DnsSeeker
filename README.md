@@ -5,7 +5,7 @@ https://github.com/keeperofdakeys/dns-lookup/
 This simple program takes advantage of the possibilities offered by the Regex library.
 https://github.com/rust-lang/regex
 ## Testing on : :test_tube:
-`Linux, Windows 10, Windows 11, Windows Serwer 2022`
+`Linux, Windows 10/11, Windows Serwer 2022`
 :stethoscope:
 ## In Linux :
 ```
@@ -14,7 +14,7 @@ cargo b --release
 ## This simple program will sort the addresses that match the domain :
 ![GitHub Logo](dnsseeker_inf.png)
 <br/>
-## Create software on Linux and Windows 10 and Windows Server 2022 to make the program compatible with the Windows family:
+## Create software on Linux and Windows 10/11 and Windows Server 2022 to make the program compatible with the Windows family:
 ```
 rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
