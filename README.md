@@ -5,7 +5,7 @@ https://github.com/keeperofdakeys/dns-lookup/
 This simple program takes advantage of the possibilities offered by the Regex library.
 https://github.com/rust-lang/regex
 ## Testing on : :test_tube:
-`Linux, Windows 10 , Windows Serwer 2022`
+`Linux, Windows 10, Windows 11, Windows Serwer 2022`
 :stethoscope:
 ## In Linux :
 ```
