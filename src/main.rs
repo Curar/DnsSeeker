@@ -11,7 +11,7 @@ use std::io::Write;
 
 fn main() {
   
-    let rootdns =r"
+    let rootdns ="
         a.root-servers.net 198.41.0.4, 2001:503:ba3e::2:30   Verisign, Inc.
         b.root-servers.net 199.9.14.201, 2001:500:200::b     University of Southern California
         c.root-servers.net 192.33.4.12, 2001:500:2::c        Cogent Communications
@@ -27,7 +27,7 @@ fn main() {
         m.root-servers.net 202.12.27.33, 2001:dc3::35        WIDE Project
         ";
     
-    let info_art =r"
+    let info_art ="
         +-----------------------------------------+
         |                                         |
         |       Welcome to the Curar project      |
@@ -37,7 +37,7 @@ fn main() {
         ";
 
 
-    let disp_info = r"
+    let disp_info ="
         (r) to display Root DNS
         (i) to display info.
         (q) to exit
