@@ -16,6 +16,7 @@ cargo b --release
 <br/>
 ## Create software on Linux and Windows 10/11 and Windows Server 2022 to make the program compatible with the Windows family:
 ```
+rustup install stable
 rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
 cargo b --release --target x86_64-pc-windows-gnu
