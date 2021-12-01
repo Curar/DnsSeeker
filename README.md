@@ -15,6 +15,15 @@ cargo b --release
 ![GitHub Logo](dnsseeker_inf.png)
 <br/>
 ## Create software on Linux and Windows 10/11 and Windows Server 2022 to make the program compatible with the Windows family:
+You mast have : https://www.mingw-w64.org/
+In Debian or Ubuntu install :
+```
+apt install mingw-w64
+```
+In Arch Linux :
+```
+pacman -S mingw-w64
+```
 ```
 rustup install stable
 rustup target add x86_64-pc-windows-gnu
