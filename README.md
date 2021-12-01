@@ -26,6 +26,7 @@ pacman -S mingw-w64
 ```
 Next steeps :
 ```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup install stable
 rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
