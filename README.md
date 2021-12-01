@@ -24,6 +24,7 @@ In Arch Linux :
 ```
 pacman -S mingw-w64
 ```
+Next steeps :
 ```
 rustup install stable
 rustup target add x86_64-pc-windows-gnu
