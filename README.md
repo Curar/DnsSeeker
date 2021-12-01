@@ -31,6 +31,7 @@ rustup install stable
 rustup target add x86_64-pc-windows-gnu
 rustup toolchain install stable-x86_64-pc-windows-gnu
 cargo b --release --target x86_64-pc-windows-gnu
+cd target/x86_64-pc-windows-gnu/release/
 ```
 <br/>
 I do not have a certificate, so my application is unsigned, therefore Windows SmartScreen detects it as dangerous.
