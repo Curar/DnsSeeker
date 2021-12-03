@@ -9,6 +9,9 @@ https://github.com/rust-lang/regex
 :stethoscope:
 ## In Linux :
 ```
+git clone https://github.com/Curar/DnsSeeker.git
+```
+```
 cargo b --release
 ```
 ## This simple program will sort the addresses that match the domain :
@@ -27,10 +30,20 @@ pacman -S mingw-w64
 Next steeps :
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+```
 rustup install stable
+```
+```
 rustup target add x86_64-pc-windows-gnu
+```
+```
 rustup toolchain install stable-x86_64-pc-windows-gnu
+```
+```
 cargo b --release --target x86_64-pc-windows-gnu
+```
+```
 cd target/x86_64-pc-windows-gnu/release/
 ```
 <br/>
