@@ -4,6 +4,8 @@ https://github.com/keeperofdakeys/dns-lookup/
 <br/>
 This simple program takes advantage of the possibilities offered by the Regex library.
 https://github.com/rust-lang/regex
+## Invitation :
+I invite anyone who has further ideas
 ## Testing on : :test_tube:
 `Linux, Windows 10/11, Windows Serwer 2022`
 :stethoscope:
