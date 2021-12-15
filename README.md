@@ -8,7 +8,6 @@ https://github.com/rust-lang/regex
 I invite anyone who has further ideas
 ## Testing on : :test_tube:
 `Linux, Windows 10/11, Windows Serwer 2022`
-:stethoscope:
 ## In Linux :
 ```
 git clone https://github.com/Curar/DnsSeeker.git
