@@ -12,8 +12,13 @@ I invite anyone who has further ideas
 ```
 git clone https://github.com/Curar/DnsSeeker.git
 ```
+## To build :
 ```
 cargo b --release
+```
+## To run :
+```
+cargo r --release
 ```
 ## This simple program will sort (Vector) the addresses that match the domain :
 https://doc.rust-lang.org/std/vec/struct.Vec.html#method.sort
