@@ -1,4 +1,4 @@
-//  DnsSeeker
+//  DnsSeeker ⍟ (Brotherhood of Steel ) 
 //  DNS lookups
 //  writing for fun ✈
 //  by Curar 2021 ☠
